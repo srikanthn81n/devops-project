@@ -1,0 +1,2 @@
+### Taking backup of home directory of user osboxes every 2 minutes
+*/2 * * * * zip -r /zippedfiles/backup.zip /home/osboxes/ && rsync -av --progress /zippedfiles/ /backup/
